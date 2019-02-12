@@ -8,7 +8,7 @@ extern const char index_html[];
 extern const char main_js[];
 
 #define WIFI_SSID "TeslaLED"
-#define WIFI_PASSWORD "NateMcComb"
+#define WIFI_PASSWORD "TeslaLED"
 
 
 
@@ -211,8 +211,8 @@ void wifi_setup() {
   Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
 
   Serial.print("Setting soft-AP ... ");
-  //Serial.println(WiFi.softAP(WIFI_SSID) ? "Ready" : "Failed!"); //WiFi.softAP(ssid.c_str(), password.c_str(), wifi_channel, hidden);
-  Serial.println(WiFi.softAP(WIFI_SSID, WIFI_PASSWORD) ? "Ready" : "Failed!");
+  Serial.println(WiFi.softAP(WIFI_SSID) ? "Ready" : "Failed!"); //WiFi.softAP(ssid.c_str(), password.c_str(), wifi_channel, hidden);
+  //Serial.println(WiFi.softAP(WIFI_SSID, WIFI_PASSWORD) ? "Ready" : "Failed!");
 
   Serial.print("Soft-AP IP address = ");
   Serial.println(WiFi.softAPIP());
