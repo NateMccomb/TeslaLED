@@ -50,12 +50,12 @@ char index_html[] PROGMEM = R"=====(
 
   ul#brightness li, ul#speed li, ul#auto li {
     display:inline-block;
-    width:30%;
+    width:40%;
   }
 
   ul li a {
     display:block;
-    margin:3px;
+    margin:5px;
     padding:10px 5px;
     border:2px solid #454545;
     border-radius:5px;
@@ -65,13 +65,13 @@ char index_html[] PROGMEM = R"=====(
   }
 
   ul li a.active {
-    border:2px solid #909090;
-    color:#909090;
+    border:2px solid #600090;
+    color:#9000ff;
   }
   </style>
 </head>
 <body>
-  <h1>#PurpleModel3</h1>
+  <h1 style="color:#9000ff;">#PurpleModel3</h1>
   <canvas id='colorbar' width='75' height='1080'></canvas>
   <div id='controls'>
     <ul id='mode'></ul>
