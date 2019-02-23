@@ -1,7 +1,8 @@
 # TeslaLED
-A softAP version of WS2812FX
+A modified version of WS2812FX for TeslaLED
 
 Current Bugs:
+Removed softAP support and installed a TP-Link TL-WR802N
 * softAP stops responding after 30-90sec. and a reboot is required for webpage control to return.
 
 ![WS2812FX library](https://raw.githubusercontent.com/kitesurfer1404/WS2812FX/master/WS2812FX_logo.png)
