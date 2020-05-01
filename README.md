@@ -1,6 +1,10 @@
 # TeslaLED
 A modified version of WS2812FX for TeslaLED
 
+The ESP32 inside version is configured for 3 outputs (6 are possible) and 1 input for the NEO-6M GPS serial data.
+A UDP server/client has been configured on both versions so the ESP32 will act as the Master and the esp8266s will act as the slaves. Show Number and Speed of slave units can be controlled through UDP. 
+[Version 8 installed in a Tesla Model 3](https://youtu.be/Yx1BHPW87Zk)
+
 Current Bugs:
 Removed softAP support and installed a TP-Link TL-WR802N
 * softAP stops responding after 30-90sec. and a reboot is required for webpage control to return.
